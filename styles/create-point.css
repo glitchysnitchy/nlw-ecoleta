@@ -100,7 +100,7 @@ form button
   color: white;
   font-size: 16px;
   border: 0;
-  margin-top: 40px;
+  margin: 40px 170px 0 170px;
   transition: background-color 400ms;
 }
 
@@ -142,6 +142,7 @@ form select
   justify-content: space-between;
   text-align: center;
   cursor: pointer;
+  transition: 100ms;
 }
 
 .itens-grid li span
@@ -151,6 +152,17 @@ form select
   display: flex;
   align-items: center;
   color: var(--title-color);
+  transition: 150ms;
+}
+
+.itens-grid li.selected span
+{
+  margin-top: 12px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: var(--title-color);
+  font-weight: 700;
 }
 
 .itens-grid li.selected

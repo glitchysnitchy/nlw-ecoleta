@@ -1,4 +1,4 @@
-function populateState()
+function populateState() //função responsável por mostrar os estados na seleção
 {
   const stateSelect = document.querySelector('select[name=state]')
   fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
@@ -12,7 +12,7 @@ function populateState()
 }
 populateState();
 
-function populateCity(event)
+function populateCity(event) //função responsável por mostrar as cidades na seleção
 {
   const citySelect = document.querySelector('select[name=city]');
   const stateInput = document.querySelector('input[name=state');
@@ -50,9 +50,9 @@ for (const item of itensCollect)
 
 const collectedItems = document.querySelector('input[name=itens]');
 
-let selectedItens = []
+let selectedItens = [] //lista de itens selecionados no formulário
 
-function handleSelectedItem()
+function handleSelectedItem() //manipulação dos itens selecionados
 {
   const itemLi = event.target;
   itemLi.classList.toggle("selected");
